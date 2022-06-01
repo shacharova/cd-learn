@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'c4',
@@ -7,6 +7,8 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class C4Component implements OnInit {
+
+  @Output('onEvent') public onEvent = new EventEmitter<string>();
 
   constructor() { }
 
