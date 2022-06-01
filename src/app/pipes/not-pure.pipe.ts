@@ -6,7 +6,7 @@ export class NotPurePipe implements PipeTransform {
 
     transform(value: any) {
         const counter = ++NotPurePipe.counter;
-        const result = `${value} ${counter}`;
+        const result = `${value} cd count: ${counter}`;
         console.log(result);
         return result;
     }

@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+control1, c1, c2, c3, c4, contacts, notes, app-root {
+    display: block;
+    border: 1px solid black;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
